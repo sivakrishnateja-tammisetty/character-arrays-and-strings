@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+int main() {
+    //character array creating and printing
+char name[100]="Siva";
+cout<<name<<endl;
+//assign some new value inside it
+strcpy(name,"Sivakrishnateja Tammisetty");
+cout<<name<<endl;
+cout<<"Length :"<<strlen(name)<<endl;
+cout<<"size :"<<sizeof(name)<<endl;
+    return 0;
+}
+
+
+
+
+
+
+//INPUT USING CIN AND GETLINE
+#include <iostream>
+using namespace std;
+int main() {
+    char name[100];
+    cin.getline(name,35);
+    cin.getline(name,35,' ');//using delimeter also(optional)
+    cout<<name<<endl;
+    return 0;
+}
+
+
+
+
+
+//INPUT USING CIN.GET
+#include <iostream>
+using namespace std;
+int main() {
+    char ch;
+    /*
+    cin>>ch;//(cin ignore whitespaces)*/
+    ch=cin.get();//Rading any kind of character including whitespaces
+    if(ch==' ')
+    {
+        cout<<"You entered space"<<endl;
+    }
+    else if(ch=='\n')
+    {
+        cout<<"You entered new line"<<endl;
+    }
+    else
+    {
+        cout<<"you entered "<<ch<<endl;
+    }
+
+    return 0;
+}
